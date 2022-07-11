@@ -1,5 +1,5 @@
 
-#NodeJS Email Microservice 
+# NodeJS Email Microservice 
 
 # Project setup steps
 
@@ -16,7 +16,7 @@
 * Go to Security tab.
 * Make sure '2-step verification' is enabled for your mail account, If not please setup.
 * Go to "app passwords" and under app passwords, select the app under dropdown by selecting "Other (custome name)" and provide name "nodemailer".
-* Click next to view/copy the reandome password to for sending emails.
+* Click next to view/copy the password for sending emails.
 * This password is to be used in the request payload of the API.
 
 # Instructions to run the service
@@ -24,13 +24,14 @@
 * start the project using "npm start" which starts the project in port 4000.
 * Open Postman and creat a "POST" request using the url "http://localhost:4000/send-email"
 * enter the request payload in the body section as show in below
-{ "mailService": "gmail",
+
+{ "mailService": "<service provider domain name Example: gmail>",
   "userName" : "<your email>,
   "password" : "<password taken from gmail app passwords>", 
   "fromMail" : "<your email>",
   "toMail" : "<recepient mail id>",
   "subject" : "<subject of mail>",
-  "text" : "<mail content>"}
+  "text" : "<mail content>" }
 
 * Click send -> 
 * If the request pay load is valid, the APi responds with response code 200 OK and "email sent successfully"
