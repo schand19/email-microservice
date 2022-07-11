@@ -1,6 +1,5 @@
-# NodeJS Microservice
 
-NodeJS Email Microservice 
+#NodeJS Email Microservice 
 
 # Project setup steps
 
